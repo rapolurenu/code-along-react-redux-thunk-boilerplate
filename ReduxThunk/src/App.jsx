@@ -1,19 +1,14 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
-import { Provider } from 'react-redux';
-import store from './store';
-import UserFetcher from './components/UserFetcher';
-import UserList from './components/UserList';
+import React from "react";
+import UserInfo from "./userInfo";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <Provider store={store}>
-      <div className="App">
-        <UserFetcher />
-        <UserList />
-      </div>
-    </Provider>
+    <div>
+      <UserInfo />
+    </div>
   );
-}
+};
 
 export default App;
